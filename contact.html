@@ -30,7 +30,7 @@
     <div class='contact'>
 <h1>Let's talk!</h1>
 <h4>Email me at wyman.lucy@gmail.com <br>or <br>Send me your comments</h4>
-<form id="comments" action="send_mail.php" method="post">
+<form id='comments' action="javascript:void(0)" method="post">
 <table>
 <tr>
 <td><input class="cell" type="text" name="name" value="" maxlength="150" placeholder="Name">
@@ -41,6 +41,15 @@
 <tr><td><input id="submitbutton" type="submit" value="Submit"></td></tr>
 </table>
 </form>
+<script type="text/javascript">
+    $("form").submit(function(){
+    echo "we're running";
+    var str = $(this).serialize();
+    $.ajax('send_mail.php', str, function(result){
+    }
+    return(false);
+});
+</script>
 </div>
 </div>
         </div>
