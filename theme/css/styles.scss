@@ -60,7 +60,7 @@ li{
     list-style-type: none;
     font-size: 16px;}
 
-#navbar{
+#menu{
     background: $prim;
     height: $navheight;
 
@@ -184,13 +184,16 @@ li{
         max-width: 630px;
         vertical-align: top;
         }
+    p{
+        padding: 5px;}
 }
         
     
 
 // Contact page
 .cell{
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     border: 2px solid $secondary;}
 
 #submitbutton{
@@ -277,5 +280,21 @@ box-shadow: 0px 0px 1px 2px;}
 }
 .footer, .wrapper:after {
   height: $footerheight - 20px; 
+}
+
+// Slick nav 
+.slicknav_menu {
+    display:none;
+}
+
+@media screen and (max-width: 40em) {
+    /* #menu is the original menu */
+    .js #menu {
+        display:none;
+    }
+    
+    .js .slicknav_menu {
+        display:block;
+    }
 }
 

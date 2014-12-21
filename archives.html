@@ -4,11 +4,19 @@
     <title>Portfolio site </title>
     <meta charset='utf-8'>
     <link rel='stylesheet' href='theme/css/styles.css' type='text/css'>
+    <link rel="stylesheet" href="SlickNav/slicknav.css" />
+    <script src="SlickNav/jquery.slicknav.min.js"></script>
+    <script>
+        $(document.ready(function(){
+            $('#menu').slicknav();
+        });
+        );
+    </script>
     <meta name='viewport' content='width=device-width'>
     </head>
    <body>
         <div class='wrapper'>
-        <div id='navbar'>
+        <div id='menu'>
             <ul>
                 <li><a href='/index.html'>Home</a></li>
                 <li><a href='/about.html'>About me</a></li>
