@@ -7,7 +7,7 @@ html, body {
   height: 100%; }
 
 html {
-  background: url("../img/nebula.png") no-repeat center center fixed;
+  background: url("../img/nebula.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -176,14 +176,16 @@ li {
 .site {
   width: 40%;
   text-align: center;
-  margin: 10px auto; }
+  margin: 10px auto;
+  padding: 20px 0px; }
   .site img {
     border: 2px solid white;
     width: 30vw;
     max-width: 630px;
     vertical-align: top; }
   .site p {
-    padding: 5px; }
+    padding: 5px;
+    font-size: 18px; }
 
 .cell {
   max-width: 500px;
