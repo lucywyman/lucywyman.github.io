@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, p, a, li {
   max-width: 100%; }
 
 h1 {
-  font-size: 32px; }
+  font-size: 36px; }
 
 h2 {
   font-size: 28px; }
@@ -96,7 +96,7 @@ li {
   display: block; }
   .mid h1 {
     margin: 0px;
-    padding: 60px 0px; }
+    padding: 30px 0px; }
 
 .bottom {
   width: 0;
