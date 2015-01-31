@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <title>Portfolio site </title>
+    <meta charset='utf-8'>
+    <script src="jquery-1.11.2.js"></script>
+    <link rel='stylesheet' href='theme/css/styles.css' type='text/css'>
+    <link rel="stylesheet" href="theme/css/slicknav.css" />
+    <script src="theme/css/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#menu').slicknav({
+                label: ''
+            });
+        });
+    </script>
+    <script>
+        $(document).scroll(function(){
+            if($(this).scrollTop() > 300 && $(this).scrollTop() <= 600){
+                $('#menu').css({"background":"rgba(255, 255, 255, .9)"});
+            } else if($(this).scrollTop() > 600){
+                $('#menu').css({"background":"rgba(255, 255, 255, 1)"});
+            } else {
+                $('#menu').css({"background":"rgba(255, 255, 255, .8)"});
+            }
+        });
+    </script>
+    <meta name='viewport' content='width=device-width'>
+    </head>
+   <body>
+        <div id='menu'>
+            <ul>
+                <li><a href='#home'>Home</a></li>
+                <li><a href='#about'>About me</a></li>
+                <li><a href='#sites'>My Work</a></li>
+                <li><a href='http://people.oregonstate.edu/~wymanl/resume.pdf'>Resume</a></li>
+                <li><a href='#contact'>Contact</a></li>
+            </ul>
+        </div>
+<a name='home'></a>
+<div class='index-wrap'>
+    <div class='index'>
+        <div class='top'></div>
+        <div class='mid'>
+            <h1>Stunning<br>Simple<br>Design by Lucy</h1>
+        </div>
+        <div class='bottom'></div>
+    </div>
+    <a href='#about'><img class='scroll' src='theme/img/down.png'></a>
+</div>
+
+<div class='white right'></div>
+<a name='about'></a>
+<div class='white page' id='about'>
+    <h2>Lucy is...</h2>
+    <ul>
+    <li>A <a href='https://lucywyman.github.io/poems'>novice poet</a></li>
+    <li>A native Portlander</li>
+    <li>A college student</li>
+    <li>An avid nap enthusiast</li>
+    <li>A <a href='http://osuosl.org/about/people/lucy-wyman'>front-end engineer</a></li>
+    <li>A runner</li>
+    <li>A fashion expert</li>
+    <li>A graduate of Cleveland High School and the International Baccalaureate diploma program</li>
+    <li>A <a href='https://www.youtube.com/watch?v=83DJiJEt_zE'>pianist</a></li>
+    <li>A volunteer at the Oregon Humane Society</li>
+    <li>A proud sister</li>
+    <li>A daughter</li>
+    <li>A dancer</li>
+    <li>A <a href='https://www.youtube.com/watch?v=DzSC2__LXk4'>space cowgirl</a></li>
+    <li>A <a href='https://github.com/lucywyman/recipes'>baker</a></li>
+    <li>A hopeless idealist</li>
+</div>
+
+<div class='blue left'></div>
+<a name='sites'></a>
+<div class='blue page' id='sites'>
+    <h2>My work</h2><br>
+    <h3>Web Applications and Design</h3><br>
+        <table>
+    <tr>
+    <td class='site'>
+        <a href='http://arbitrary-converter.herokuapp.com'>
+        <img class='site-pic' src='theme/img/arbitrary-converter.png'>
+        <p>arbitrary-converter.herokuapp.com</p></a>
+    </td>
+    <td class='site'>
+        <a href='http://lucywyman.github.io/poems'>
+        <img class='site-pic' src='theme/img/poems.png'>
+        <p>lucywyman.github.io/poems</p></a>
+    </td>
+    </tr>
+    <tr>
+    <td class='site'>
+        <a href='http://osuosl.org'>
+        <img class='site-pic' src='theme/img/osuosl.png'>
+        <p>osuosl.org</p></a>
+    </td>
+    <td class='site'>
+        <a href='http://people.oregonstate.edu/~wymanl/libreo'>
+        <img class='site-pic' src='theme/img/libreo.png'>
+        <p>libreo.com</p></a>
+    </td>
+    </tr>
+    <tr>
+    <td class='site'>
+        <a href='http://devopsbootcamp.osuosl.org/daycamp'>
+        <img class='site-pic' src='theme/img/daycamp.png'>
+        <p>osl.io/devopsdaycamp</p></a>
+    </td>
+    </tr>
+    </table>
+
+   <h3>C and C++</h3>
+     <table>
+    <tr>
+    <td class='site'>
+        <a href='https://github.com/lucywyman/ipdb/tree/master/ipdb'>
+        <img class='site-pic' src='theme/img/ipdb.png'>
+        <p>IP Address Database using Shared Memory</p></a>
+    </td>
+    <td class='site'>
+        <a href='https://github.com/lucywyman/ipdb/tree/master/sockets'>
+        <img class='site-pic' src='theme/img/sockets.png'>
+        <p>Client and Server in C using Sockets</p></a>
+    </td>
+    </tr>
+    <tr>
+    <td class='site'>
+        <a href='http://github.com/lucywyman/archiver'>
+        <img class='site-pic' src='theme/img/archiver.png'>
+        <p>Reimplementation of ar</p></a>
+    </td>
+    <td class='site'>
+        <a href='https://github.com/lucywyman/client-server/tree/master/client-server'>
+        <img class='site-pic' src='theme/img/client.png'>
+        <p>Client and Server in C using Fifos</p></a>
+    </td>
+    </tr>
+ 
+    <tr>
+    <td class='site'>
+        <a href='http://github.com/lucywyman/go-fish'>
+        <img class='site-pic' src='theme/img/gofish.png'>
+        <p>Command line Go fish in C++</p></a>
+    </td>
+    <td class='site'>
+        <a href='https://github.com/lucywyman/dijkstra-algorithm'>
+        <img class='site-pic' src='theme/img/dijkstra.png'>
+        <p>Implementation of Dijkstra algorithm in C</p></a>
+    </td>
+    </tr>
+ 
+    </table> 
+
+    <h3>Presentations</h3>
+    <table>
+    <tr>
+    <td class='site'>
+        <a href='http://people.oregonstate.edu/~wymanl/presentations/sass.html'>
+        <img class='site-pic' src='theme/img/sass.png'>
+        <p>Sass: Why it's so Syntactically Awesome</p></a>
+    </td>
+    <td class='site'>
+        <a href='http://people.oregonstate.edu/~wymanl/presentations/web-intro.html'>
+        <img class='site-pic' src='theme/img/html-css.png'>
+        <p>Introduction to HTML and CSS</p></a>
+    </td>
+    </tr>
+    </table> 
+</div>
+
+<a name='contact'></a>
+<div class='white right'></div>
+<div class='white page' id='contact'>
+    <h2>Let's talk!</h2>
+    <h4>Email me at wyman.lucy@gmail.com<br>
+    Message lucyw on irc.freenode.net or irc.mozilla.org<br>
+    Or check out my work on <a href='https://github.com/lucywyman'>github</a></h4>
+</div>
+
+    <div class='footer'>
+        <a href='https://github.com/lucywyman'><img class='social' src='theme/img/github-icon.png'></a>
+        <a href='http://linkedin.com/pub/lucy-wyman/70/553/6a7/'><img class='social' src='theme/img/linkedin.png'></a>
+        <a href='https://plus.google.com/107251431728646146032/posts'><img class='social' src='theme/img/google-plus.png'></a>
+    </div>
+   </body>
+</html>
+
