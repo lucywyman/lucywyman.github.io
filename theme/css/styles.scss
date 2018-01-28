@@ -5,7 +5,7 @@ $prim: rgba(255, 255, 255, .8);
 $secondary: #0C0134;
 $accent: #5500FF;
 $hover: #6A6A6A;
-$sans: 'Montserrat', sans-serif;
+$sans: 'Helvetica', sans-serif;
 $light: #fff;
 $dark: #0C0134;
 $navheight: 50px;
@@ -52,13 +52,22 @@ h4{
 p{
     font-size: 16px;}
 a{
-    color: $accent;
+    color: $dark;
     text-decoration: none;}
 a:hover {
         color: $hover;}
 li{
     list-style-type: none;
     font-size: 16px;}
+
+.image-source {
+  color: $light;
+  font-size: 14px;
+  
+  a {
+    color: $light;
+  }
+}
 
 #menu{
     background: $prim;
@@ -120,12 +129,9 @@ li{
     height: 200px;
     background: $prim;
     text-align: center;
-    display: block;
-
-    h1{
-        margin: 0px;
-        padding: 30px 0px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bottom{
@@ -159,59 +165,27 @@ li{
 .transparent{
     background: $prim;}
 
-.right{
-    width: 200%;
-    height: 120px;
-    transform: rotate(-2deg) translate(-100px, 0px);
-    z-index: 100;
-}
-
-.left{
-    width: 200%;
-    height: 120px;
-    transform: rotate(2deg) translate(-100px, 0px);
-    z-index: 100;
-}
-
 .white{
     background: #fff;
-    margin-top: -60px;
 }
 
 .blue{
     background: $secondary;
-    margin-top: -60px;
-    z-index: 100;
     
     h1, h2, h3, h4, p, li{
         color: $light;}
 }
 
 .page{
-    padding: 10%;
-    width: 100%;
-    padding-bottom: 160px;
+    padding: 5% 10%;
 }
 
 // About me page
-.polaroid{
-    position: relative;
-    width: 100%;
-    margin: 30px;
-
-    img{
-        transform: rotate(-3deg);
-        -ms-transform: rotate(-3deg);
-        -webkit-transform: rotate(-3deg);
-        display: block;
-        max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-        border: 10px solid #ffffff;
-        border-bottom: 70px solid #fff;
-        box-shadow: 0px 0px 1px 3px #777;
-        width: 40%;
-    }
+.headshot {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 // Resume
@@ -229,13 +203,17 @@ li{
     
     img{
         border: 2px solid white;
-        width: 30vw;
         max-width: 630px;
+        max-height: 400px;
         vertical-align: top;
         }
     p{
         padding: 5px;
         font-size: 18px;
+    }
+
+    a:hover p:hover{
+      color: $hover;
     }
 }
         

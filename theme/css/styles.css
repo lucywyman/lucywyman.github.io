@@ -20,7 +20,7 @@ body {
   top: 0px; }
 
 h1, h2, h3, h4, h5, p, a, li {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Helvetica", sans-serif;
   color: #0C0134;
   max-width: 100%; }
 
@@ -40,7 +40,7 @@ p {
   font-size: 16px; }
 
 a {
-  color: #5500FF;
+  color: #0C0134;
   text-decoration: none; }
 
 a:hover {
@@ -49,6 +49,12 @@ a:hover {
 li {
   list-style-type: none;
   font-size: 16px; }
+
+.image-source {
+  color: #fff;
+  font-size: 14px; }
+  .image-source a {
+    color: #fff; }
 
 #menu {
   background: rgba(255, 255, 255, 0.8);
@@ -93,10 +99,9 @@ li {
   height: 200px;
   background: rgba(255, 255, 255, 0.8);
   text-align: center;
-  display: block; }
-  .mid h1 {
-    margin: 0px;
-    padding: 30px 0px; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .bottom {
   width: 0;
@@ -124,50 +129,22 @@ li {
 .transparent {
   background: rgba(255, 255, 255, 0.8); }
 
-.right {
-  width: 200%;
-  height: 120px;
-  transform: rotate(-2deg) translate(-100px, 0px);
-  z-index: 100; }
-
-.left {
-  width: 200%;
-  height: 120px;
-  transform: rotate(2deg) translate(-100px, 0px);
-  z-index: 100; }
-
 .white {
-  background: #fff;
-  margin-top: -60px; }
+  background: #fff; }
 
 .blue {
-  background: #0C0134;
-  margin-top: -60px;
-  z-index: 100; }
+  background: #0C0134; }
   .blue h1, .blue h2, .blue h3, .blue h4, .blue p, .blue li {
     color: #fff; }
 
 .page {
-  padding: 10%;
-  width: 100%;
-  padding-bottom: 160px; }
+  padding: 5% 10%; }
 
-.polaroid {
-  position: relative;
-  width: 100%;
-  margin: 30px; }
-  .polaroid img {
-    transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    -webkit-transform: rotate(-3deg);
-    display: block;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 10px solid #ffffff;
-    border-bottom: 70px solid #fff;
-    box-shadow: 0px 0px 1px 3px #777;
-    width: 40%; }
+.headshot {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto; }
 
 #resume p {
   margin-left: 25px;
@@ -180,12 +157,14 @@ li {
   padding: 20px 0px; }
   .site img {
     border: 2px solid white;
-    width: 30vw;
     max-width: 630px;
+    max-height: 400px;
     vertical-align: top; }
   .site p {
     padding: 5px;
     font-size: 18px; }
+  .site a:hover p:hover {
+    color: #6A6A6A; }
 
 .cell {
   max-width: 500px;
