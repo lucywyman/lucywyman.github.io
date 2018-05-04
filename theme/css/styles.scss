@@ -1,11 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
 
 $bodybg: #fff;
 $prim: rgba(255, 255, 255, .8);
 $secondary: #0C0134;
-$accent: #5500FF;
+$accent: #1AA1FD;
 $hover: #6A6A6A;
-$sans: 'Helvetica', sans-serif;
+$sans: 'PT Sans', sans-serif;
 $light: #fff;
 $dark: #0C0134;
 $navheight: 50px;
@@ -42,23 +42,23 @@ h1, h2, h3, h4, h5, p, a, li{
 }
 
 h1{
-    font-size: 36px;}
+    font-size: 54px;}
 h2{
-    font-size: 28px;}
+    font-size: 40px;}
 h3{ 
-    font-size: 24px;}
+    font-size: 36px;}
 h4{
+    font-size: 28px;}
+p,li{
     font-size: 20px;}
-p{
-    font-size: 16px;}
 a{
-    color: $dark;
+    color: $accent;
     text-decoration: none;}
 a:hover {
         color: $hover;}
 li{
     list-style-type: none;
-    font-size: 16px;}
+  }
 
 .image-source {
   color: $light;

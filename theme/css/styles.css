@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
 * {
   margin: 0; }
 
@@ -20,35 +20,34 @@ body {
   top: 0px; }
 
 h1, h2, h3, h4, h5, p, a, li {
-  font-family: "Helvetica", sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #0C0134;
   max-width: 100%; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 54px; }
 
 h2 {
-  font-size: 28px; }
+  font-size: 40px; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 36px; }
 
 h4 {
+  font-size: 28px; }
+
+p, li {
   font-size: 20px; }
 
-p {
-  font-size: 16px; }
-
 a {
-  color: #0C0134;
+  color: #1AA1FD;
   text-decoration: none; }
 
 a:hover {
   color: #6A6A6A; }
 
 li {
-  list-style-type: none;
-  font-size: 16px; }
+  list-style-type: none; }
 
 .image-source {
   color: #fff;
@@ -76,7 +75,7 @@ li {
         line-height: 50px;
         color: #0C0134; }
       #menu ul li a:hover {
-        color: #5500FF; }
+        color: #1AA1FD; }
       #menu ul li ul {
         display: none; }
         #menu ul li ul li {
